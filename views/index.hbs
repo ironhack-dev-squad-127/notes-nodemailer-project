@@ -1,0 +1,16 @@
+<h1>NODEMAILER</h1>
+
+{{!-- Send data to "POST /send-email" --}}
+{{!-- Send `req.body.email` and `req.body.subject` and `req.body.message` --}}
+<form action="/send-email" method="post">
+  <label for="">Email</label>
+  <input type="email" name="email" id="">
+  <br>
+  <label for="">Subject</label>
+  <input type="text" name="subject" id="">
+  <br>
+  <label for="">Message</label>
+  <textarea type="text" name="message" id=""></textarea>
+  <br>
+  <button type="submit">Submit</button>
+</form>
